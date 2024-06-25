@@ -1,0 +1,114 @@
+{
+    "carousel": [
+        {
+            "id": 1,
+            "img": "/img/benz-banner.jpg"
+        },
+        {
+            "id": 2,
+            "img": "/img/lexus-banner.jpg"
+        },
+        {
+            "id": 3,
+            "img": "/img/toyota_banner.jpg"
+        }
+    ],
+    "product":[
+        {
+            "id": 1,
+            "name": "Lexus 420",
+            "img": "/img/Lexus.jpg",
+            "price": "N400",
+            "featured": true,
+            "topselling": false
+        },
+        {
+            "id": 2,
+            "name": "Benz E500",
+            "img": "/img/benz-1.jpeg",
+            "price": "N450",
+            "featured": true,
+            "topselling": false
+        },
+        {
+            "id": 3,
+            "name": "Honda Accord",
+            "img": "/img/Honda.jpg",
+            "price": "N300",
+            "featured": true,
+            "topselling": false
+        },
+        {
+            "id": 4,
+            "name": "Toyota Accord",
+            "img":"/img/toyota-1.jpg",
+            "price": "N320",
+            "featured": true,
+            "topselling": false
+        },
+        {
+            "id": 5,
+            "name": "Lexus Rx350",
+            "img":"/img/lexus-1.jpg",
+            "price": "N450",
+            "featured": false,
+            "topselling": true
+        },
+        {
+            "id": 6,
+            "name": "Benz CLA",
+            "img":"/img/Benz.jpg",
+            "price": "N390",
+            "featured": false,
+            "topselling": true
+        },
+        {
+            "id": 7,
+            "name": "Honda Civic",
+            "img":"/img/Honda-1.jpg",
+            "price": "N20",
+            "featured": false,
+            "topselling": true
+        },
+        {
+            "id": 8,
+            "name": "Toyota 200",
+            "img": "/img/Toyota-2.jpg",
+            "price": "N360",
+            "featured": false,
+            "topselling": true
+        },
+        {
+            "id": 9,
+            "name": "Lexus",
+            "img": "/img/lexus-2.jpg",
+            "price": "N320",
+            "featured": false,
+            "topselling": false
+        },
+        {
+            "id": 10,
+            "name": "Benz CLA",
+            "img": "/img/benz-2.jpg",
+            "price": "N320",
+            "featured": false,
+            "topselling": false
+        },
+        {
+            "id": 11,
+            "name": "Honda v4",
+            "img": "/img/Honda-2.jpg",
+            "price": "N320",
+            "featured": false,
+            "topselling": false
+        },
+        {
+            "id": 12,
+            "name": "Toyota",
+            "img": "/img/Toyota-3.jpg",
+            "price": "N320",
+            "featured": false,
+            "topselling": false
+        } 
+    ]
+}
