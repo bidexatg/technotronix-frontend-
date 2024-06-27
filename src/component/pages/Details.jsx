@@ -26,7 +26,7 @@ function Details() {
   return (
     <div className="flex m-[5%] gap-4">
         <div className="w-[50%]">
-            <img src={"http://localhost:3000/" + caritem?.img} alt="" />
+            <img src={"https://technotronix-backend-0zoz.onrender.com/" + caritem?.img} alt="" />
         </div>
         <div className="w-[50%]">
             <h1 className="text-2xl font-bold border-b-2 mb-5">{caritem?.name}</h1>

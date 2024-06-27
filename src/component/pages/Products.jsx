@@ -25,7 +25,7 @@ function Products() {
             <div className="flex lg:gap-7 justify-center gap-5 flex-wrap">
                 {product.map((item)=>(
                     <Card key={item._id}>
-                        <Link to={`/details/${item._id}`}> <img src={"http://localhost:3000/" + item.img} alt="" className="h-[150px] lg:h-[200px]" /></Link>
+                        <Link to={`/details/${item._id}`}> <img src={"https://technotronix-backend-0zoz.onrender.com/" + item.img} alt="" className="h-[150px] lg:h-[200px]" /></Link>
                         <p className="font-bold">{item.name}</p>
                         <p>₦{item.price}</p>
                         <button onClick={isAuthenticated ? ()=> addToCart(item._id) : login} className="bg-orange-500 text-white p-[10px] rounded mt-[10]">Add to cart</button>

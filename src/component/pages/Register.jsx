@@ -18,7 +18,7 @@ function Register() {
     const registerHandler = async(e) =>{
         e.preventDefault();
         try {
-            const res = await fetch("http://localhost:3000/register", {
+            const res = await fetch("https://technotronix-backend-0zoz.onrender.com/register", {
             method: "POST", 
             headers: {"content-Type": "application/json"},
             body: JSON.stringify({

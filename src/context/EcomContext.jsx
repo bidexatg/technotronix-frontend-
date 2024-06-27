@@ -43,13 +43,13 @@ export const EcomProvider = ({ children }) => {
     const topselling = product.filter((item) => item.topSelling === true);
 
     const fetchProduct = async () => {
-        const response = await fetch("http://localhost:3000/api/product")
+        const response = await fetch("https://technotronix-backend-0zoz.onrender.com/api/product")
         const data = await response.json()
         setProduct(data)
     }
 
     const fetchCarousel = async () => {
-        const response = await fetch("http://localhost:3000/carousel")
+        const response = await fetch("https://technotronix-backend-0zoz.onrender.com/carousel")
         const data = await response.json()
         setSlide(data)
     }
@@ -70,7 +70,7 @@ export const EcomProvider = ({ children }) => {
         // }
 
         try {
-            const res = await fetch("http://localhost:3000/addtocart", {
+            const res = await fetch("https://technotronix-backend-0zoz.onrender.com/addtocart", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -94,7 +94,7 @@ export const EcomProvider = ({ children }) => {
 
     const fetchCart = async () => {
         try {
-            const res = await fetch("http://localhost:3000/cart", {
+            const res = await fetch("https://technotronix-backend-0zoz.onrender.com/cart", {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json",
@@ -119,7 +119,7 @@ export const EcomProvider = ({ children }) => {
             return;
         }
         try {
-            const res = await fetch("http://localhost:3000/update-quantity", {
+            const res = await fetch("https://technotronix-backend-0zoz.onrender.com/update-quantity", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -149,7 +149,7 @@ export const EcomProvider = ({ children }) => {
 
     const removeItem = async (productId) => {
         try {
-            const res = await fetch("http://localhost:3000/remove-item", {
+            const res = await fetch("https://technotronix-backend-0zoz.onrender.com/remove-item", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -179,7 +179,7 @@ export const EcomProvider = ({ children }) => {
     //     const currency = "NGN"
 
     //     try {
-    //         const res = await fetch("http://localhost:3000/api/payment/intiate", {
+    //         const res = await fetch("https://technotronix-backend-0zoz.onrender.com/api/payment/intiate", {
     //             method: "POST",
     //             headers: {
     //                 "Content-Type": "application/json",
@@ -202,7 +202,7 @@ export const EcomProvider = ({ children }) => {
 
     const createOrder = async (transaction_id, orderId) => {
         try {
-            const response = await fetch("http://localhost:3000/api/payment/verify", {
+            const response = await fetch("https://technotronix-backend-0zoz.onrender.com/api/payment/verify", {
                 method: "POST",
                 headers: {
                     "Content-type": "application/json",

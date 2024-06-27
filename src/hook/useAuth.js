@@ -8,7 +8,7 @@ const useAuth = ()=>{
             const token = localStorage.getItem('auth-token')
             if (token) {
                 try {
-                    const res = await fetch("http://localhost:3000/user", {
+                    const res = await fetch("https://technotronix-backend-0zoz.onrender.com/user", {
                         method: "GET",
                         headers: {
                             "Content-Type": "application/json",
