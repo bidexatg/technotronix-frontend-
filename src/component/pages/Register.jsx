@@ -38,7 +38,10 @@ function Register() {
             showAndHide("Password must contain at least 8 characters long and must contain one number and one letter")
         } else if (data === "no match") {
             showAndHide("error", "Password do not match")
-        } else {
+        } else if (data === "must be 8 characters") {
+            showAndHide("error", "Password must contain at least 8 characters")    
+        }
+         else {
             redirect("/login")
             showAndHide("success", "Registration Successfull!!!")
         }
